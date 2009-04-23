@@ -1,6 +1,10 @@
 SMS::Send::DeviceGsm
 ====================
 
+1.06	Thu Apr 23 22:08:36 BST 2009
+	- Tidy POD
+	- Set repository in META.yml
+
 1.04	Mon May 12 13:57:53 BST 2008
 	- Removed kwalitee test, added LICENSE information
 

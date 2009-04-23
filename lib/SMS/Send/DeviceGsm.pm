@@ -6,7 +6,7 @@ use base qw(SMS::Send::Driver);
 use Device::Gsm;
 use vars qw($VERSION);
 
-$VERSION = '1.04';
+$VERSION = '1.06';
 
 sub new {
   my $package = shift;
@@ -79,7 +79,7 @@ Using this driver will cost you money. B<YOU HAVE BEEN WARNED>
 
 =head1 METHODS
 
-=head2 new
+=head2 C<new>
 
   # Create a new sender using this driver
   my $sender = SMS::Send->new( 'DeviceGsm',
@@ -95,11 +95,11 @@ set of params for specifying the login and password.
 
 =over
 
-=item _baudrate
+=item C<_baudrate>
 
 The C<_baudrate> param defaults to '19200'.
 
-=item _port
+=item C<_port>
 
 The C<_port> param is the serial port to connect to. On Unix, can be also a convenient link as /dev/modem (the default value). For Win32, COM1,2,3,4 can be used.
 
@@ -107,7 +107,7 @@ The C<_port> param is the serial port to connect to. On Unix, can be also a conv
 
 Returns a new C<SMS::Send::DeviceGsm> object, or dies on error.
 
-=head2 send_sms
+=head2 C<send_sms>
 
   # Send a message to a particular address
   my $result = $sender->send_sms(
@@ -132,7 +132,7 @@ Chris Williams E<lt>chris@bingosnet.co.uk<gt>
 
 =head1 LICENSE 
 
-Copyright 2007 Chris Williams
+Copyright E<copy> Chris Williams
 
 This program is free software; you can redistribute
 it and/or modify it under the same terms as Perl itself.
