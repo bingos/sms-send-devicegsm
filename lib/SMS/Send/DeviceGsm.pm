@@ -1,12 +1,11 @@
 package SMS::Send::DeviceGsm;
 
+#ABSTRACT: An SMS::Send driver for Device::Gsm.
+
 use strict;
 use warnings;
 use base qw(SMS::Send::Driver);
 use Device::Gsm;
-use vars qw($VERSION);
-
-$VERSION = '1.06';
 
 sub new {
   my $package = shift;
@@ -33,12 +32,13 @@ sub write {
   1;
 }
 
-1;
-__END__
+'Call me!';
 
-=head1 NAME
+=pod
 
-SMS::Send::DeviceGsm - An SMS::Send driver for Device::Gsm.
+=for Pod::Coverage write
+
+=cut
 
 =head1 SYNOPSIS
 
@@ -125,25 +125,6 @@ Bugs should be reported via the CPAN bug tracker at
 L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=SMS-Send-DeviceGsm>
 
 For other issues, contact the author.
-
-=head1 AUTHOR
-
-Chris Williams E<lt>chris@bingosnet.co.uk<gt>
-
-=head1 LICENSE 
-
-Copyright E<copy> Chris Williams
-
-This program is free software; you can redistribute
-it and/or modify it under the same terms as Perl itself.
-
-Additionally, you are again reminded that this software comes with
-no warranty of any kind, including but not limited to the implied
-warranty of merchantability.
-
-ANY use may result in charges on your phone bill, and you should use this
-software with care. The author takes no responsibility for any such
-charges accrued.
 
 =head1 SEE ALSO
 
